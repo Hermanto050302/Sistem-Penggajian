@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C437D4E-0755-4839-B851-68B6CFC5CA8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>penggajian</RootNamespace>
+    <AssemblyName>penggajian</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Absen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Absen.Designer.cs">
+      <DependentUpon>Absen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbsenEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbsenEdit.Designer.cs">
+      <DependentUpon>AbsenEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gaji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gaji.Designer.cs">
+      <DependentUpon>Gaji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Golongan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Golongan.Designer.cs">
+      <DependentUpon>Golongan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GolonganEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GolonganEdit.Designer.cs">
+      <DependentUpon>GolonganEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GolonganTambah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GolonganTambah.Designer.cs">
+      <DependentUpon>GolonganTambah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karyawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karyawan.Designer.cs">
+      <DependentUpon>Karyawan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KaryawanEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KaryawanEdit.Designer.cs">
+      <DependentUpon>KaryawanEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KaryawanTambah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KaryawanTambah.Designer.cs">
+      <DependentUpon>KaryawanTambah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanAbsensi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanAbsensi.Designer.cs">
+      <DependentUpon>LaporanAbsensi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanGaji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanGaji.Designer.cs">
+      <DependentUpon>LaporanGaji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="penggajianDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>penggajianDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Absen.resx">
+      <DependentUpon>Absen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbsenEdit.resx">
+      <DependentUpon>AbsenEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gaji.resx">
+      <DependentUpon>Gaji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Golongan.resx">
+      <DependentUpon>Golongan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GolonganEdit.resx">
+      <DependentUpon>GolonganEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GolonganTambah.resx">
+      <DependentUpon>GolonganTambah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karyawan.resx">
+      <DependentUpon>Karyawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KaryawanEdit.resx">
+      <DependentUpon>KaryawanEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KaryawanTambah.resx">
+      <DependentUpon>KaryawanTambah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanAbsensi.resx">
+      <DependentUpon>LaporanAbsensi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanGaji.resx">
+      <DependentUpon>LaporanGaji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="penggajianDataSet.xsc">
+      <DependentUpon>penggajianDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="penggajianDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>penggajianDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="penggajianDataSet.xss">
+      <DependentUpon>penggajianDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="PAGEOBJECTMODELLib">
+      <Guid>{237F4BEC-8AE5-41E1-AE84-B194E4670597}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="PROMPTINGLib">
+      <Guid>{8106BAD6-FB6E-49D5-8368-3F7030C9F6E7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SAXSERIALIZELib">
+      <Guid>{6EF0D172-0FAB-4FC3-BDBB-C6C0D9D69A10}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
